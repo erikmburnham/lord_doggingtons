@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<!--  
+File Name: index.html
+Date: 08/14/2016
+Programmer: Erik Burnham
+-->
+
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="author" content="Erik Burnham">
+
+<title>Lord Doggington's</title>
+    
+<link href="http://fonts.googleapis.com/css?family=Open+Sans"
+rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/generic.css" rel="stylesheet" type="text/css">
+<link href="css/grid.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--  responsove grid used for nav.--> 
+
+    
+    <nav>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#booking">booking</a></li>
+            <li><a href="#map">location/contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#social">social</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <img src="images/lord_doggington_logo_black.png" alt="Lord Doggington Logo">
+        
+        
+    </header>
+    
+    
+    
+    <main class="section group">
+        
+        <section id="hero">
+            <img src="images/lord_doggington.jpg" alt="Lord Doggington">
+        </section>
+        
+        
+        <section id="about">
+            <h2>About</h2>
+            
+        <p>Lord doggington's offers the finest in canine service. From our bone-shaped pool and kennels that are for for a king &#40;or queen&#41;, your pet will get the treatment that they will deserve!</p>
+                 </section>
+
+
+        <section id="services">
+            <h2>Services</h2>
+            <p> At Lord Doggington's we offer several services that will pamper and make your pet feel like he or she is one of our family. Such as:</p>
+            
+            <figure>
+            <figcaption>Award-winning spa and grooming center</figcaption>    
+            <img src="images/grooming.jpg" alt="Grooming" >
+            </figure>
+            
+            <figure>
+            <figcaption>Bone-shaped pool for playtime</figcaption>    
+            <img src="images/bone_pool.jpg" alt="Bone Pool" >
+            </figure>
+        
+            <figure>
+            <figcaption>"Main Street USA" day kennels and visiting area</figcaption>
+            <img src="images/kennel_town.jpg" alt="Main St USA" >
+            </figure>
+        
+            <figure>
+            <figcaption>Luxurious kennels for overnight stays</figcaption>
+            <img src="images/luxury_bed.jpg" alt="Luxury Bed" >
+            </figure>
+            <br>
+        </section>
+         
+         <section id="booking">
+            <h2>Booking</h2>
+             <p>* = Required Info</p>
+             <form name="reservation" method="post" >
+        
+    <select size="1" name="serviceSelect" id="serviceSelect">
+        <option>*Cooose your service</option>
+            <option value="daycare">Daycare</option>
+            <option value="boarding">Overnight Boarding</option>
+            <option value="spa">Spa/ Grooming</option>
+        </select>
+        <br>
+        <br>
+    <label for="myFName">*First Name</label><input type="text" name="myFName" id="myFName" required="required">
+        <br>
+        <br>
+    <label for="myLName">*Last Name</label><input type="text" name="myLName" id="myLName" required="required">
+        <br>
+        <br>
+    <label for="email">*E-mail</label><input type="email" name="email" id="email" required="required">
+        <br>
+        <br>
+    <label for="myPhone">Phone</label><input type="tel" name="myPhone" id="myPhone">
+        <br>
+        <br>
+    <label for="myDate">*Date&#40;s&#41; of visit</label><input type="text" name="myDate" id="myDate" required="required">
+        <br>
+        <br>
+    <label for="myChoice">*Number of canines </label><input type="number" name="myChoice" id="myChoice" min="1" max="14" required="required">
+        <br>
+        <br>
+    <label for="myAllergies">Do any of your animals require special medication or have any allergies?<br></label><textarea class="nocenter" name="myAllergies" id="myAllergies"  cols="30" rows="6" >Enter your comments here</textarea>
+        <br>
+        <br>
+    <input type="submit" id="mySubmit1">
+    
+    </form>
+            
+            </section>
+         
+        
+        
+        <section id="map">
+            <h2>Location</h2>
+            <p>Located in the west hills, we are just 5short minutes from dwontown!</p>
+            <img src="images/lord_doggington_map.png" alt="map">
+            
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>  Dial 503-555-5555 to speak with one of our canine specialists!</p>
+        </section>
+        
+       <section id="faq">
+           <h2>FAQ's</h2> 
+           
+           <form name="faqForm" method="post" >
+           <label for="myQuestions">Are there any other questions besides the FAQ's that you might have?<br></label><textarea class="nocenter" name="myQuestions" id="myQuestions"  cols="40" rows="6" >Enter your questions here</textarea>
+           
+           <input type="submit" id="mySubmit2">
+           </form> 
+        
+        </section>
+        
+        
+    </main>
+<!--  Add working links to social sites... these are just placeholder images-->
+
+    <footer class="section group">
+        <section id="social">
+            <h1>Follow Us!</h1>
+        
+            <div class="col span_1_of_3">
+            <img src="images/icons/facebook_100x100.png" alt="facebook">
+            </div>
+            
+            
+            <div class="col span_1_of_3">
+            <img src="images/icons/twitter_100x100.png" alt="twitter">
+            </div>
+            
+            
+            <div class="col span_1_of_3">
+            <img src="images/icons/instagram_100x100.png" alt="instagram" >
+            </div>
+            
+            
+            
+            
+            
+        </section>
+    
+    </footer>
+
+</body>
+
+</html>
